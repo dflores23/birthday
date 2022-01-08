@@ -2,15 +2,15 @@
 import React, { useState } from "react";
 
 //destructure out props, including router prop history
-const Form = ({ initialBirthday, handleSubmit, buttonLabel, history }) => {
+const Form = ({ initialBirthday, handleSubmit, outlineButton, history }) => {
 
 
     // Initiallize the form with the initialBirthday state
     const [formData, setFormData] = useState(initialBirthday);
 
-    //////////////////////////
+//____________
     // Functions
-    //////////////////////////
+//____________
 
     // Standard React Form HandleChange Function
     const handleChange = (event) => {
@@ -54,7 +54,7 @@ const Form = ({ initialBirthday, handleSubmit, buttonLabel, history }) => {
                 value={formData.details}
                 name="details"
             />
-            <input type="submit" value={buttonLabel} />
+            <input type="submit" value={outlineButton} />
         </form>
     );
 };

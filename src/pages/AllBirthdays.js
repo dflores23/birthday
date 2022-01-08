@@ -1,5 +1,7 @@
 import React from "react"
 import Birthday from "../components/Birthday"   
+// import Swiper from  "swiper"
+
 
 
 const AllBirthday =(props) => {

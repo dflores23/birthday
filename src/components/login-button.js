@@ -7,6 +7,9 @@ const LoginButton = () => {
     <button
       className="login"
       onClick={() => loginWithRedirect()}
+      id="qsLoginBtn"
+      variant="primary"
+      className="btn-margin"
     >
       Log in
     </button>

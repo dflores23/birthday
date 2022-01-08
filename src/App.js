@@ -3,16 +3,20 @@ import './App.css';
 import AllBirthdays from "./pages/AllBirthdays";
 import Form from "./pages/Form"
 import SingleBirthday from "./pages/SingleBirthday"
+import NavBar from './components/nav-bar';
 
 
 
 import { useState, useEffect } from "react";
 import { Route, Switch, Link } from "react-router-dom"
 
+
 function App(props) {
   // ____________________
   // States and Variables
   // ____________________
+  
+
 
   // api url
   const url = "https://dob-backend.herokuapp.com/people/";
@@ -91,7 +95,7 @@ function App(props) {
 
   return (
     <div className="App">
-
+      <NavBar />
       <h1>Birthday's Reminder</h1>
       <Link to="/new"><button>Create New Birthday</button></Link>
       <Switch>
