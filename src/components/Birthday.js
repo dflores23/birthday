@@ -37,7 +37,7 @@ export default function Birthday ({birthday}) {
             }} pagination={true} className="mySwiper">
                 <SwiperSlide><div className="box">
                     <Link to={`/birthday/${birthday.id}`}>
-                        <h1>🎁 {birthday.name} 🎁</h1>
+                        <h1>{birthday.name}</h1>
                     </Link>
                 </div>
                 </SwiperSlide>

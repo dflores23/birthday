@@ -44,6 +44,8 @@
   transition: 0.3s;
   margin: 5rem;
   padding: 1rem;
+  border-radius: 1rem;
+  border: solid .1rem;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -62,4 +64,9 @@ h1:hover {
 .button {
   margin: 1rem;
   
+}
+
+.body, html {
+background-color: #c9c9c9b4;
+
 }

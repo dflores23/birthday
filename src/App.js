@@ -108,7 +108,7 @@ function App(props) {
     <div className="App">
       <NavBar />
 
-      <h1>Birthday's Reminder</h1>
+      <h1>Birthday Reminder</h1>
       <Link to="/new"><button className="button">Create New Birthday</button></Link>
       <Switch>
         
