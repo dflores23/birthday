@@ -6,16 +6,27 @@ import SingleBirthday from "./pages/SingleBirthday"
 import NavBar from './components/nav-bar';
 
 
-
-import { useState, useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import {useRef, useState, useEffect } from "react";
 import { Route, Switch, Link } from "react-router-dom"
 
+import "swiper/css";
+import "swiper/css/pagination"
+import "swiper/css/navigation"
+
+
+
+import SwiperCore, {
+  Pagination,Navigation
+} from 'swiper';
+
+SwiperCore.use([Pagination,Navigation]);
 
 function App(props) {
   // ____________________
   // States and Variables
   // ____________________
-  
+
 
 
   // api url
@@ -96,20 +107,24 @@ function App(props) {
   return (
     <div className="App">
       <NavBar />
+
       <h1>Birthday's Reminder</h1>
-      <Link to="/new"><button>Create New Birthday</button></Link>
+      <Link to="/new"><button className="button">Create New Birthday</button></Link>
       <Switch>
-        <Route
-          exact
-          path="/"
-          render={(rp) => {
-            return <AllBirthdays {...rp}
-              birthdays={birthdays}
+        
+            <Route
+              exact
+              path="/"
+              render={(rp) => {
+                return <AllBirthdays {...rp}
+                  birthdays={birthdays}
+                />
+              }}
             />
-          }}
-        />
+          
 
         {/* Show PAGE */}
+        
         <Route
           path="/birthday/:id"
           render={(rp) => {
@@ -119,6 +134,7 @@ function App(props) {
               deleteBirthday={deleteBirthday} />
           }}
         />
+        
         {/* New &Edit pages */}
         <Route
           path="/new"

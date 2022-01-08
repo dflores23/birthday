@@ -2,7 +2,7 @@ import React from 'react';
 
 
 import AuthNav from './auth-nav';
-import Birthday from './Birthday';
+
 
 const NavBar = () => {
   return (
@@ -10,7 +10,6 @@ const NavBar = () => {
       <nav className="navbar navbar-expand-md navbar-light bg-light">
         <div className="container">
           <div className="navbar-brand logo" />
-          {/* <Birthday /> */}
           <AuthNav />
         </div>
       </nav>

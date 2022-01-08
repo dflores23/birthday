@@ -11,14 +11,13 @@ const SingleBirthday = ({ birthdays, match, edit, deleteBirthday}) => {
             <h1>🎁 {birthday?.name} 🎁</h1>
             <h2>{birthday?.birthday}</h2>
             <h3>{birthday?.details}</h3>
-            <button onClick={(event) => edit(birthday)}>Edit</button>
-            <button onClick={(event) => deleteBirthday(birthday)}>Delete</button>
+            <button className="button"onClick={(event) => edit(birthday)}>Edit</button>
+            <button className="button"onClick={(event) => deleteBirthday(birthday)}>Delete</button>
             <Link to="/">
-                <button>Go Back</button>
+                <button className="button">Go Back</button>
             </Link>
         </div>
     )
 }
 
 export default SingleBirthday
-

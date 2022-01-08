@@ -59,4 +59,7 @@ h1:hover {
   color: rgb(49, 45, 83);
 }
 
-
+.button {
+  margin: 1rem;
+  
+}

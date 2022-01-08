@@ -12,3 +12,6 @@ const AllBirthday =(props) => {
 }
 
 export default AllBirthday
+
+
+
