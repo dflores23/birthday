@@ -5,6 +5,7 @@ import Form from "./pages/Form"
 import SingleBirthday from "./pages/SingleBirthday"
 
 
+
 import { useState, useEffect } from "react";
 import { Route, Switch, Link } from "react-router-dom"
 
@@ -90,6 +91,7 @@ function App(props) {
 
   return (
     <div className="App">
+
       <h1>Birthday's Reminder</h1>
       <Link to="/new"><button>Create New Birthday</button></Link>
       <Switch>
@@ -116,14 +118,14 @@ function App(props) {
         {/* New &Edit pages */}
         <Route
           path="/new"
-          render={(rp) => (
-            <Form
+          render={(rp) => {
+            return <Form
               {...rp}
               initialBirthday={nullBirthday}
               handleSubmit={addBirthdays}
               buttonLabel="create a new Birthday"
             />
-          )}
+          }}
         />
 
         <Route

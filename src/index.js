@@ -5,11 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "milligram"
 import { BrowserRouter as Router, Route } from "react-router-dom"
+import Auth0ProviderWithHistory from './auth0Provider';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+      <Auth0ProviderWithHistory>
     <Route path="/" component={App} />
+    </Auth0ProviderWithHistory>
   </Router>
   </React.StrictMode>,
   document.getElementById('root')

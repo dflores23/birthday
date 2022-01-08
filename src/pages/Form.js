@@ -3,9 +3,8 @@ import React, { useState } from "react";
 
 //destructure out props, including router prop history
 const Form = ({ initialBirthday, handleSubmit, buttonLabel, history }) => {
-    ////////////////
-    // The Form Data State
-    ////////////////
+
+
     // Initiallize the form with the initialBirthday state
     const [formData, setFormData] = useState(initialBirthday);
 
@@ -37,7 +36,7 @@ const Form = ({ initialBirthday, handleSubmit, buttonLabel, history }) => {
                 type="text"
                 onChange={handleChange}
                 value={formData.name}
-                name="Name"
+                name="name"
             />
 
             <input
@@ -45,7 +44,7 @@ const Form = ({ initialBirthday, handleSubmit, buttonLabel, history }) => {
                 type="date"
                 onChange={handleChange}
                 value={formData.birthday}
-                name="Birthday"
+                name="birthday"
             />
 
             <input
