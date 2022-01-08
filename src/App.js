@@ -108,12 +108,12 @@ function App(props) {
         {/* Show PAGE */}
         <Route
           path="/birthday/:id"
-          render={(rp) => (
-            <SingleBirthday {...rp}
+          render={(rp) => {
+            return <SingleBirthday {...rp}
               birthdays={birthdays}
               edit={getTargetBirthday}
-              deleteTodo={deleteBirthday} />
-          )}
+              deleteBirthday={deleteBirthday} />
+          }}
         />
         {/* New &Edit pages */}
         <Route

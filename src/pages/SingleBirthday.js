@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 
 
-const SingleBirthday = ({ birthdays, match, edit, deleteBirthday }) => {
+const SingleBirthday = ({ birthdays, match, edit, deleteBirthday}) => {
     const id = parseInt(match.params.id)
     const birthday = birthdays.find((birthday) => birthday.id === id)
 
