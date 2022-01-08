@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Fruktur&family=Mina&family=Over+the+Rainbow&family=Rock+3D&family=Shizuru&display=swap");
 
 .App {
   text-align: center;
@@ -45,7 +45,7 @@
   margin: 5rem;
   padding: 1rem;
   border-radius: 1rem;
-  border: solid .1rem;
+  border: solid 0.1rem;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -53,8 +53,13 @@
   box-shadow: 0 12px 20px 0 rgba(121, 121, 121, 0.356);
 }
 
-h1, h2, h3 {
-  color: blue;
+h1,
+h2,
+h3 {
+  font-family: "Mina", sans-serif;
+  color: rgb(34, 33, 48);
+  padding: 10px 0px 10px 0px;
+  margin: 10px;
 }
 
 h1:hover {
@@ -63,9 +68,10 @@ h1:hover {
 
 .button {
   margin: 2.3rem;
+  padding: 4çrem;
 }
 
-.body, html {
-background-color: #c9c9c9b4;
-
+.body,
+html {
+  background-color: #c9c9c9b4;
 }
