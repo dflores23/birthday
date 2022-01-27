@@ -1,5 +1,6 @@
 // Import useState hook
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 //destructure out props, including router prop history
 const Form = ({ initialBirthday, handleSubmit, outlineButton, history }) => {
@@ -55,6 +56,7 @@ const Form = ({ initialBirthday, handleSubmit, outlineButton, history }) => {
                 name="details"
             />
             <input type="submit" value={outlineButton} />
+            <Link to="/"><button>Home</button></Link>
         </form>
     );
 };

@@ -3,11 +3,10 @@ import './App.css';
 import AllBirthdays from "./pages/AllBirthdays";
 import Form from "./pages/Form"
 import SingleBirthday from "./pages/SingleBirthday"
-import NavBar from './components/nav-bar';
+// import NavBar from './components/nav-bar';
 
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import {useRef, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Route, Switch, Link } from "react-router-dom"
 
 import "swiper/css";
@@ -106,9 +105,9 @@ function App(props) {
 
   return (
     <div className="App">
-      <NavBar />
+      {/* <NavBar /> */}
 
-      <h1>Birthday Reminder</h1>
+      <Link to="/"><h1>Birthday Reminder</h1></Link>
       <Link to="/new"><button className="button">Create New Birthday</button></Link>
       <Switch>
         
