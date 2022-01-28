@@ -42,7 +42,7 @@ const Form = ({ initialBirthday, handleSubmit, outlineButton, history }) => {
 
             <input className="form"
                 placeholder="Birthday"
-                type="date"
+                type="text"
                 onChange={handleChange}
                 value={formData.birthday}
                 name="birthday"
