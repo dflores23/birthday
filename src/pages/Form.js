@@ -32,7 +32,7 @@ const Form = ({ initialBirthday, handleSubmit, outlineButton, history }) => {
     // Our Form, an input for the subject and details fields and a submit button
     return (
         <form onSubmit={handleSubmission}>
-            <input
+            <input className="form"
                 placeholder="Name"
                 type="text"
                 onChange={handleChange}
@@ -40,7 +40,7 @@ const Form = ({ initialBirthday, handleSubmit, outlineButton, history }) => {
                 name="name"
             />
 
-            <input
+            <input className="form"
                 placeholder="Birthday"
                 type="date"
                 onChange={handleChange}
@@ -48,15 +48,15 @@ const Form = ({ initialBirthday, handleSubmit, outlineButton, history }) => {
                 name="birthday"
             />
 
-            <input
+            <input className="form"
                 placeholder="Details"
                 type="text"
                 onChange={handleChange}
                 value={formData.details}
                 name="details"
             />
-            <input type="submit" value={outlineButton} />
-            <Link to="/"><button>Home</button></Link>
+            <input  type="submit" value={outlineButton} />
+            <Link to="/"><button className="submit">Home</button></Link>
         </form>
     );
 };

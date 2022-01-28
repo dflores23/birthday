@@ -75,3 +75,14 @@ h1:hover {
 html {
   background-color: #c9c9c9b4;
 }
+
+.form {
+  padding: 4rem;
+  margin: 2rem;
+  max-width: 30%;
+}
+
+.submit {
+ 
+  margin: 1rem;
+}
