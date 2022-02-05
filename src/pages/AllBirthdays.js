@@ -6,7 +6,9 @@ import Birthday from "../components/Birthday"
 
 const AllBirthday =(props) => {
     return props.birthdays.map((birthday)=> {
-        return <Birthday key={birthday.id} birthday={birthday}
+        return <Birthday 
+        key={birthday.id} 
+        birthday={birthday}
         />
     })
 }
