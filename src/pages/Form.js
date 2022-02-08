@@ -9,9 +9,9 @@ const Form = ({ initialBirthday, handleSubmit, outlineButton, history }) => {
     // Initiallize the form with the initialBirthday state
     const [formData, setFormData] = useState(initialBirthday);
 
-//____________
+    //____________
     // Functions
-//____________
+    //____________
 
     // Standard React Form HandleChange Function
     const handleChange = (event) => {
@@ -32,6 +32,7 @@ const Form = ({ initialBirthday, handleSubmit, outlineButton, history }) => {
     // Our Form, an input for the subject and details fields and a submit button
     return (
         <form onSubmit={handleSubmission}>
+            <div className="md-form md-outline input-with-post-icon datepicker">
             <input className="form"
                 placeholder="Name"
                 type="text"
@@ -41,9 +42,8 @@ const Form = ({ initialBirthday, handleSubmit, outlineButton, history }) => {
             />
 
             <input className="form"
+                type="date" 
                 placeholder="Birthday"
-                type="date"
-                required pattern=""
                 onChange={handleChange}
                 value={formData.birthday}
                 name="birthday"
@@ -56,7 +56,8 @@ const Form = ({ initialBirthday, handleSubmit, outlineButton, history }) => {
                 value={formData.details}
                 name="details"
             />
-            <input  type="submit" value={outlineButton} />
+            </div>
+            <input type="submit" value={outlineButton} />
             <Link to="/"><button className="submit">Home</button></Link>
         </form>
     );
